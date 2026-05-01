@@ -252,6 +252,16 @@ body{
 input[type=text], input[type=email], input[type=tel], select, textarea{
     width: 100%;
     font-size: 15px;
+    padding: 1em;
+    border: 2px solid partial.$secondaryColor;
+    border-radius: 4px;
+    margin: 0.5em 1em 1em 1em;
+    box-sizing: border-box;
+    font-family: partial.$font;
+
+        &::placeholder{
+            color: partial.$textColor;
+        }
 }
 
 .visually-hidden{ /*Bootstrap defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
