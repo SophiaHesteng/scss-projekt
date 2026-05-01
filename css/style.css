@@ -261,6 +261,24 @@ input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::
   color: #333;
 }
 
+input[type=submit] {
+  background-color: #388071;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  width: 100%;
+  margin: 0 1em;
+  cursor: pointer; /*Laver musen om fra en pil til en hånd, mere brugervenligt*/
+}
+input[type=submit]:hover {
+  background-color: #133833;
+  transition: 0.3s ease-in-out;
+}
+
 .visually-hidden { /*Bootstrap defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
   border: 0;
   clip-path: inset(50%);
